@@ -15,7 +15,7 @@ html {
     --White: hsl(0, 0%, 100%);
     --Light-Grey: hsl(217, 12%, 63%);
     --Slow-Grey: hsl(214, 11%, 25%);
-    --Medium-Grey: hsl(216, 12%, 54%);
+    --Medium-Grey: hsl(215, 10%, 49%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);   
     --Orange: hsl(25, 97%, 53%);
@@ -65,6 +65,7 @@ h1 {
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+    padding: 0;
 }
 
 .button-rating {
@@ -91,6 +92,28 @@ h1 {
     
 }
 
+
+  /* set hover and active styling */
+
+  .btn .button-rating:hover {
+    background-color: var(--Medium-Grey);
+    color: #fff;
+}
+  .btn .button-rating:focus {
+    background-color: var(--Orange);
+    color: #fff;
+}
+  .btn .button-rating:active {
+    background-color: var(--Orange);
+    color: #fff;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color: var(--Orange);
+    transition: cubic-bezier(.17,.67,.77,.86);
+}
+
 .rating > img {
     padding: 1.3rem;
     background-color: var(--Slow-Grey);
@@ -99,11 +122,6 @@ h1 {
 
 
 /* THANKYOU */
-
-
-/* .thankyou {
-    display: none;
-} */
 
 .thankyou {
     display: flex;
@@ -131,3 +149,21 @@ h1 {
 }
 
 /* MEDIA Q */
+
+
+/* hidden */
+.hidden {
+    display: none;
+}
+
+/* att */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    color: hsl(231, 5%, 27%);
+  }
+  .attribution a {
+    color: hsl(231, 3%, 39%);
+    text-decoration: none;
+  }
